@@ -49,6 +49,6 @@ vue.js+element-ui
 
 - 打包后的组件文件
 
-## vue-demo
+## vue-example
 
 - vue 调用组件
