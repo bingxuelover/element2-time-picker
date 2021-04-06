@@ -16,42 +16,39 @@ vue.js+element-ui
 
 - 选择日期，选择可选范围内的开始时间和结束时间（使用 select 实现）
 - 可选分钟只能是 '00' 和 '30',作为 option 选项，从 getOptions 中设置（利用 element-ui 的 select 的 disabled 功能来实现）
+- 参数：
+  getOptions：传递到组件中的显示的时间节点，设置是否可选
+  timeOccupied：传递到组件中的已经占用的时间
+- 获取值
+  date：选中的日期
+  start：选中的开始时间，时分
+  end：选中的结束时间，时分
 
 ### time-range-picker.html
 
 - 使用 time-picker 实现
 - 可选一天里的所有小时和分钟
 - 利用 element-ui 的 time-picker 的 picker-options 的 selectableRange 来设置可以使用的时间
+- 参数
+  timeRange：可选的时间范围
+  timeOccupied：传递到组件中的已经占用的时间
+- 获取值
+  date：选中的日期
+  start：选中的开始时间，时分
+  end：选中的结束时间，时分
 
 ### 参数
 
-- 获取到的不可选择时间区域是['09:00', '10:00'], ['13:00', '14:30']
+- timeOccupied 获取到的不可选择时间区域是['09:00', '10:00'], ['13:00', '14:30']
 
-## example 文件夹
+## demo 文件夹
 
 - 是一个组件注册的 html 例子
 
-## vue-demo 文件夹
+## dist
 
-- main.js 调用组件的方法
-- App.vue 是使用组件的例子
-- index.js 注册组件的方法
-- components 中是两个组件
+- 打包后的组件文件
 
-## Project setup
+## vue-demo
 
-```
-   yarn install
-```
-
-### Compiles and hot-reloads for development
-
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-
-```
-yarn build
-```
+- vue 调用组件
