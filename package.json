@@ -1,7 +1,6 @@
 {
   "name": "vue2-element2-time-picker",
   "version": "0.1.0",
-  "private": true,
   "author": "Sophie",
   "scripts": {
     "build": "rollup -c",
