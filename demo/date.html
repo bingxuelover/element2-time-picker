@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+    <link rel="stylesheet"
+        href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script
+        src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.12/vue.min.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="../dist/iview-ui.global.js"></script>
+    <script src="./options.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div>vue element {{elData}}</div>
+        <h2>time picker</h2>
+        <time-slot-picker :get-options="options" :time-occupied="timeOccupied"
+            :date.sync="datePicker1" :start.sync="startPicker1"
+            :end.sync="endPicker1">
+        </time-slot-picker>
+        <h2>TimeRangePicker</h2>
+        <time-point-picker :time-occupied="[]" :time-range="timeRange"
+            :date.sync="datePicker2" :start.sync="startPicker2"
+            :end.sync="endPicker2">
+        </time-point-picker>
+    </div>
+    <script>
+        const { TimeSlotPicker, TimePointPicker } = elementUI;
+        var app = new Vue({
+            el: '#app',
+            components: { TimeSlotPicker, TimePointPicker },
+            data: {
+                datePicker1: "",
+                startPicker1: "",
+                endPicker1: "",
+                datePicker2: "",
+                startPicker2: "",
+                endPicker2: "",
+                elData: "vue time picker page",
+                options,
+                timeOccupied: [
+                    ["09:00", "10:00"],
+                    ["13:00", "14:30"],
+                ],
+                timeRange: ["08:30:00 - 18:00:00"],
+            }
+        })
+    </script>
+</body>
+
+</html>

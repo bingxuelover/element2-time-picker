@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>测试time picker</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{ message }}</p>
+      <test-item :todo="todos"/>
+    </div>
+    <script src="../../html/js/vue.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+      Vue.use(install, {name: "test-item"});
+      console.log(Vue.Test());
+      new Vue({
+        el: '#app',
+        data: {
+          message: 'Hello Vue.js!',
+          todos: {
+            text: 'in test'
+          }
+        }
+      })
+    </script>
+  </body>
+</html>
