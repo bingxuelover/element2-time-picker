@@ -4,7 +4,7 @@
   "author": "Sophie",
   "repository": {
     "type": "git",
-    "directory": "git@github.com:bingxuelover/element2-time-picker.git"
+    "url": "git@github.com:bingxuelover/element2-time-picker.git"
   },
   "scripts": {
     "build": "rollup -c",
