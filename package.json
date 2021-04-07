@@ -2,6 +2,10 @@
   "name": "vue2-element2-time-picker",
   "version": "0.1.0",
   "author": "Sophie",
+  "repository": {
+    "type": "git",
+    "directory": "git@github.com:bingxuelover/element2-time-picker.git"
+  },
   "scripts": {
     "build": "rollup -c",
     "lint": "eslint --no-error-on-unmatched-pattern --ext .vue --ext .js --ext .jsx packages/**/ src/**/ --fix"
