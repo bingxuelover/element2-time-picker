@@ -1,14 +1,16 @@
 {
   "name": "vue2-element2-time-picker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Sophie",
+  "main": "dist/element-ui.cjs.prod.js",
+  "homepage": "http://www.huangyuhong.cn",
   "repository": {
     "type": "git",
     "url": "git@github.com:bingxuelover/element2-time-picker.git"
   },
   "scripts": {
     "build": "rollup -c",
-    "lint": "eslint --no-error-on-unmatched-pattern --ext .vue --ext .js --ext .jsx packages/**/ src/**/ --fix"
+    "lint": "eslint --no-error-on-unmatched-pattern --ext .vue --ext .js  src/**/ --fix"
   },
   "peerDependencies": {
     "element-ui": "^2.15.1"
